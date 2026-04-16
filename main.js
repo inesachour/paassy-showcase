@@ -350,19 +350,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const newTheme = isDark ? 'light' : 'dark';
     htmlElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
-    
+
     // Swap Screenshots
     const discoverImg = document.getElementById('screenshot-discover');
-    const detailsImg  = document.getElementById('screenshot-details');
+    const detailsImg = document.getElementById('screenshot-details');
     if (discoverImg) discoverImg.src = `assets/screenshots/${newTheme}/discover_screen.png`;
-    if (detailsImg)  detailsImg.src  = `assets/screenshots/${newTheme}/event_details_screen.png`;
+    if (detailsImg) detailsImg.src = `assets/screenshots/${newTheme}/event_details_screen.png`;
   });
 
   // Init Screenshots
   const discoverImg = document.getElementById('screenshot-discover');
-  const detailsImg  = document.getElementById('screenshot-details');
+  const detailsImg = document.getElementById('screenshot-details');
   if (discoverImg) discoverImg.src = `assets/screenshots/${currentTheme}/discover_screen.png`;
-  if (detailsImg)  detailsImg.src  = `assets/screenshots/${currentTheme}/event_details_screen.png`;
+  if (detailsImg) detailsImg.src = `assets/screenshots/${currentTheme}/event_details_screen.png`;
 
 
   /* ── 2. LANGUAGE SWITCHER ── */
@@ -373,7 +373,7 @@ document.addEventListener('DOMContentLoaded', () => {
     currentLang = lang;
     htmlElement.setAttribute('lang', lang);
     localStorage.setItem('lang', lang);
-    
+
     // Update button text
     langToggle.textContent = lang.toUpperCase();
 
@@ -416,18 +416,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ── 4. MOBILE HAMBURGER ── */
   const hamburger = document.getElementById('hamburger');
-  const navLinks  = document.getElementById('nav-links');
-  
+  const navLinks = document.getElementById('nav-links');
+
   hamburger.addEventListener('click', () => {
     const isOpen = navLinks.classList.toggle('open');
     const spans = hamburger.querySelectorAll('span');
     if (isOpen) {
       spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
-      spans[1].style.opacity   = '0';
+      spans[1].style.opacity = '0';
       spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
     } else {
       spans[0].style.transform = '';
-      spans[1].style.opacity   = '1';
+      spans[1].style.opacity = '1';
       spans[2].style.transform = '';
     }
   });
@@ -439,7 +439,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ── 6. CONTACT FORM HANDLING ── */
   const contactForm = document.getElementById('contact-form');
   const formSuccess = document.getElementById('form-success');
-  const submitBtn   = document.getElementById('contact-submit');
+  const submitBtn = document.getElementById('contact-submit');
 
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
