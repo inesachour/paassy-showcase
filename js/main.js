@@ -269,15 +269,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // Swap Screenshots
     const discoverImg = document.getElementById('screenshot-discover');
     const detailsImg = document.getElementById('screenshot-details');
-    if (discoverImg) discoverImg.src = `assets/screenshots/${newTheme}/discover_screen.png`;
-    if (detailsImg) detailsImg.src = `assets/screenshots/${newTheme}/event_details_screen.png`;
+    if (discoverImg) discoverImg.src = `${basePath}assets/screenshots/${newTheme}/discover_screen.png`;
+    if (detailsImg) detailsImg.src = `${basePath}assets/screenshots/${newTheme}/event_details_screen.png`;
   });
 
   // Init Screenshots
   const discoverImg = document.getElementById('screenshot-discover');
   const detailsImg = document.getElementById('screenshot-details');
-  if (discoverImg) discoverImg.src = `assets/screenshots/${currentTheme}/discover_screen.png`;
-  if (detailsImg) detailsImg.src = `assets/screenshots/${currentTheme}/event_details_screen.png`;
+  if (discoverImg) discoverImg.src = `${basePath}assets/screenshots/${currentTheme}/discover_screen.png`;
+  if (detailsImg) detailsImg.src = `${basePath}assets/screenshots/${currentTheme}/event_details_screen.png`;
 
 
   /* ── 2. LANGUAGE SWITCHER ── */
