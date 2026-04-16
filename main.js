@@ -67,28 +67,7 @@ const translations = {
     feat_7_desc: "Naviguez en français ou en anglais. L'application s'adapte automatiquement à votre langue préférée.",
     feat_8_title: "Connexion simplifiée",
     feat_8_desc: "Authentification rapide par email avec code OTP, ou en un clic avec Google ou Apple.",
-    // Events Section
-    ev_badge: "Événements",
-    ev_title_1: "Des événements pour",
-    ev_title_2: "tous les goûts",
-    ev_subtitle: "Concerts, festivals, spectacles, sport — tout ce qui fait vibrer la Tunisie, au bout de vos doigts.",
-    ev_tab_all: "Tout",
-    ev_tab_concerts: "🎵 Concerts",
-    ev_tab_festivals: "🎪 Festivals",
-    ev_tab_theatre: "🎭 Théâtre",
-    ev_tab_sport: "⚽ Sport",
-    ev_tab_art: "🎨 Art",
-    ev_cat_concert: "🎵 Concert",
-    ev_cat_festival: "🎪 Festival",
-    ev_cat_djset: "🎵 DJ Set",
-    ev_cat_theatre: "🎭 Théâtre",
-    ev_cat_sport: "⚽ Sport",
-    ev_cat_art: "🎨 Exposition",
-    ev_tag_trending: "🔥 Tendance",
-    ev_tag_new: "⚡ Nouveau",
-    ev_book: "Réserver",
-    ev_all_cta: "Voir tous les événements",
-    ev_footer_p: "Et des centaines d'autres événements à découvrir sur l'application…",
+
     // How it works
     how_badge: "Simple & Rapide",
     how_title_1: "Réservez en",
@@ -253,28 +232,7 @@ const translations = {
     feat_7_desc: "Navigate in French or English. The application automatically adapts to your preferred language.",
     feat_8_title: "Simplified Login",
     feat_8_desc: "Quick authentication via email with OTP code, or with one click using Google or Apple.",
-    // Events Section
-    ev_badge: "Events",
-    ev_title_1: "Events for",
-    ev_title_2: "every taste",
-    ev_subtitle: "Concerts, festivals, shows, sport — everything that makes Tunisia vibrate, at your fingertips.",
-    ev_tab_all: "All",
-    ev_tab_concerts: "🎵 Concerts",
-    ev_tab_festivals: "🎪 Festivals",
-    ev_tab_theatre: "🎭 Theater",
-    ev_tab_sport: "⚽ Sport",
-    ev_tab_art: "🎨 Art",
-    ev_cat_concert: "🎵 Concert",
-    ev_cat_festival: "🎪 Festival",
-    ev_cat_djset: "🎵 DJ Set",
-    ev_cat_theatre: "🎭 Theater",
-    ev_cat_sport: "⚽ Sport",
-    ev_cat_art: "🎨 Exhibition",
-    ev_tag_trending: "🔥 Trending",
-    ev_tag_new: "⚡ New",
-    ev_book: "Book",
-    ev_all_cta: "See all events",
-    ev_footer_p: "And hundreds of other events to discover on the app…",
+
     // How it works
     how_badge: "Simple & Fast",
     how_title_1: "Book in",
@@ -475,31 +433,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  /* ── 5. EVENT FILTERING ── */
-  const tabs = document.querySelectorAll('.event-tab');
-  const cards = document.querySelectorAll('.ev-card');
 
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      const filter = tab.getAttribute('data-tab');
-      tabs.forEach(t => t.classList.remove('active'));
-      tab.classList.add('active');
-      cards.forEach(card => {
-        const category = card.getAttribute('data-category');
-        if (filter === 'all' || category === filter) {
-          card.classList.remove('hidden');
-          card.style.opacity = '0';
-          card.style.transform = 'translateY(10px)';
-          setTimeout(() => {
-            card.style.opacity = '1';
-            card.style.transform = 'translateY(0)';
-          }, 50);
-        } else {
-          card.classList.add('hidden');
-        }
-      });
-    });
-  });
 
 
   /* ── 6. CONTACT FORM HANDLING ── */
