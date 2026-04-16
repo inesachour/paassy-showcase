@@ -233,6 +233,17 @@ const translations = {
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  /* ── 0. COMPONENT INJECTION ── */
+  const navbarPlaceholder = document.getElementById('navbar-placeholder');
+  const footerPlaceholder = document.getElementById('footer-placeholder');
+
+  if (navbarPlaceholder && typeof navbarHTML !== 'undefined') {
+    navbarPlaceholder.innerHTML = navbarHTML;
+  }
+  if (footerPlaceholder && typeof footerHTML !== 'undefined') {
+    footerPlaceholder.innerHTML = footerHTML;
+  }
+
   /* ── 1. THEME TOGGLE ── */
   const themeToggle = document.getElementById('theme-toggle');
   const htmlElement = document.documentElement;
