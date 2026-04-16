@@ -26,8 +26,8 @@ const navbarHTML = `
       <div class="nav-actions">
         <button class="lang-toggle" id="lang-toggle" aria-label="Changer la langue">FR</button>
         <button class="theme-toggle" id="theme-toggle" aria-label="Basculer le thème">
-          <span class="theme-icon theme-icon--sun">☀️</span>
-          <span class="theme-icon theme-icon--moon">🌙</span>
+          <span class="theme-icon theme-icon--sun"><i data-lucide="sun"></i></span>
+          <span class="theme-icon theme-icon--moon"><i data-lucide="moon"></i></span>
         </button>
         <button class="hamburger" id="hamburger" aria-label="Menu">
           <span></span><span></span><span></span>

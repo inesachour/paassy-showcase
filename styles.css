@@ -16,6 +16,24 @@
   --transition: .3s cubic-bezier(.4, 0, .2, 1);
 }
 
+/* ── ICONS ── */
+.lucide {
+  width: 1.25em;
+  height: 1.25em;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  display: inline-block;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+[data-theme="light"] .lucide {
+  stroke-width: 1.75; /* Slightly thicker for light mode clarity */
+}
+
 /* ── DARK THEME (default) ── */
 [data-theme="dark"] {
   --bg: #110C1A;
@@ -1388,8 +1406,34 @@ body {
 }
 
 .dl-btn svg,
-.btn svg {
-  fill: currentColor;
+.btn svg,
+.dl-btn .lucide,
+.btn .lucide {
+  fill: none; /* Lucide icons are strokes, not fills */
+  flex-shrink: 0;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.success-icon {
+  color: #10b981;
+  margin-right: 8px;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.heart-icon {
+  color: #ef4444;
+  width: 1.1em;
+  height: 1.1em;
+  fill: #ef4444; /* Give the heart a fill */
+  display: inline-block;
+  vertical-align: sub;
 }
 
 .dl-btn:hover {
