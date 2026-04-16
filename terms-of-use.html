@@ -27,79 +27,96 @@
     <div class="hero-bg-orb orb-3"></div>
     <div class="particles" id="particles"></div>
 
-    <div class="container policy-content">
+    <div class="container">
       <a href="index.html" class="back-home">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-          <path d="M19 12H5M12 19l-7-7 7-7" />
-        </svg>
-        Back to Home
+        <i data-lucide="arrow-left"></i>
+        <span>Retour à l'accueil</span>
       </a>
 
       <header class="policy-header" data-aos="fade-up">
         <div class="section-badge">Legal</div>
         <h1 class="section-title">Terms of <br /><span class="gradient-text">Use</span></h1>
-        <p class="section-subtitle">By using Paassy, you agree to the following terms governing ticket purchases and
-          event access.</p>
+        <div class="last-updated">
+          <i data-lucide="calendar"></i>
+          <span>Last Updated: April 2024</span>
+        </div>
       </header>
 
-      <section class="policy-section" data-aos="fade-up">
-        <h2>Booking Service</h2>
-        <p>Paassy acts as a technological intermediary between users and event organizers:</p>
-        <ul>
-          <li><strong>Availability:</strong> Tickets are sold within the stock limits defined by the organizer.</li>
-          <li><strong>Cart:</strong> Once tickets are added to the cart, you have <strong>10 minutes</strong> to
-            complete your reservation.</li>
-          <li><strong>Accuracy:</strong> The user is responsible for the accuracy of information provided during the
-            order.</li>
-        </ul>
-      </section>
+      <div class="policy-grid">
+        <!-- Sidebar Navigation -->
+        <aside class="policy-sidebar">
+          <div class="policy-sidebar-title">Sections</div>
+          <ul class="policy-nav-list">
+            <li class="policy-nav-item"><a href="#booking">Booking Service</a></li>
+            <li class="policy-nav-item"><a href="#confirmation">Reservation & Confirmation</a></li>
+            <li class="policy-nav-item"><a href="#intellectual">Intellectual Property</a></li>
+            <li class="policy-nav-item"><a href="#responsibility">Responsibility</a></li>
+            <li class="policy-nav-item"><a href="#refund">Refund & Cancellation</a></li>
+            <li class="policy-nav-item"><a href="#law">Governing Law</a></li>
+          </ul>
+        </aside>
 
-      <section class="policy-section" data-aos="fade-up">
-        <h2>Reservation & Confirmation</h2>
-        <p>All bookings are managed via our secure platform:</p>
-        <ul>
-          <li>Confirmation is sent instantly to your account once your reservation is validated.</li>
-          <li>Service fees, if applicable, are clearly indicated before final validation of your choice.</li>
-        </ul>
-      </section>
+        <!-- Main Content -->
+        <div class="policy-main">
+          <section class="policy-card icon-vivid icon-blue" id="booking" data-aos="fade-up">
+            <h2><i data-lucide="shopping-cart"></i> Booking Service</h2>
+            <p>Paassy acts as a technological intermediary between users and event organizers:</p>
+            <ul>
+              <li><strong>Availability:</strong> Tickets are sold within the stock limits defined by the organizer.</li>
+              <li><strong>Cart:</strong> Once tickets are added to the cart, you have <strong>10 minutes</strong> to complete
+                your reservation.</li>
+              <li><strong>Accuracy:</strong> The user is responsible for the accuracy of information provided during the
+                order.</li>
+            </ul>
+          </section>
 
-      <section class="policy-section" data-aos="fade-up">
-        <h2>Intellectual Property</h2>
-        <p>All content present on the Paassy app and website is protected:</p>
-        <ul>
-          <li><strong>Content:</strong> Logos, texts, graphics, and software are the exclusive property of Paassy.</li>
-          <li><strong>Usage:</strong> Any unauthorized reproduction or distribution is strictly prohibited.</li>
-        </ul>
-      </section>
+          <section class="policy-card icon-vivid icon-green" id="confirmation" data-aos="fade-up">
+            <h2><i data-lucide="check-circle"></i> Reservation & Confirmation</h2>
+            <p>All bookings are managed via our secure platform:</p>
+            <ul>
+              <li>Confirmation is sent instantly to your account once your reservation is validated.</li>
+              <li>Service fees, if applicable, are clearly indicated before final validation of your choice.</li>
+              <li>Digital tickets (QR codes) will be available in the "My Tickets" section of the app.</li>
+            </ul>
+          </section>
 
-      <section class="policy-section" data-aos="fade-up">
-        <h2>Responsibility</h2>
-        <p>Paassy strives to provide a reliable service, but:</p>
-        <ul>
-          <li><strong>Events:</strong> The organizer is solely responsible for the event's execution.</li>
-          <li><strong>Interruptions:</strong> We cannot guarantee uninterrupted service due to technical maintenance.
-          </li>
-          <li><strong>Damages:</strong> Paassy cannot be held liable for indirect damages related to service use.</li>
-        </ul>
-      </section>
+          <section class="policy-card icon-vivid icon-purple" id="intellectual" data-aos="fade-up">
+            <h2><i data-lucide="copyright"></i> Intellectual Property</h2>
+            <p>All content present on the Paassy app and website is protected:</p>
+            <ul>
+              <li><strong>Content:</strong> Logos, texts, graphics, and software are the exclusive property of Paassy.</li>
+              <li><strong>Usage:</strong> Any unauthorized reproduction or distribution is strictly prohibited.</li>
+            </ul>
+          </section>
 
-      <section class="policy-section" data-aos="fade-up">
-        <h2>Refund & Cancellation</h2>
-        <p>Refund conditions depend on the organizer's policy:</p>
-        <ul>
-          <li>In case of event cancellation, Paassy will facilitate the refund process according to the organizer's
-            directives.</li>
-          <li>Unless stated otherwise, tickets are non-exchangeable and non-refundable.</li>
-        </ul>
-      </section>
+          <section class="policy-card icon-vivid icon-orange" id="responsibility" data-aos="fade-up">
+            <h2><i data-lucide="alert-triangle"></i> Responsibility</h2>
+            <p>Paassy strives to provide a reliable service, but:</p>
+            <ul>
+              <li><strong>Events:</strong> The organizer is solely responsible for the event's execution and quality.</li>
+              <li><strong>Interruptions:</strong> We cannot guarantee uninterrupted service during technical maintenance or
+                force majeure.</li>
+              <li><strong>Damages:</strong> Paassy cannot be held liable for indirect damages related to service use.</li>
+            </ul>
+          </section>
 
-      <section class="policy-section" data-aos="fade-up">
-        <h2>Governing Law</h2>
-        <p>These terms are governed by Tunisian law. Any dispute will be submitted to the exclusive jurisdiction of the
-          courts in Tunis.</p>
-      </section>
+          <section class="policy-card icon-vivid icon-pink" id="refund" data-aos="fade-up">
+            <h2><i data-lucide="refresh-cw"></i> Refund & Cancellation</h2>
+            <p>Refund conditions depend on the organizer's policy:</p>
+            <ul>
+              <li>In case of event cancellation, Paassy will facilitate the refund process according to the organizer's
+                directives.</li>
+              <li>Unless stated otherwise, tickets are non-exchangeable and non-refundable.</li>
+            </ul>
+          </section>
 
-      <div class="last-updated">Last updated: April 16, 2026</div>
+          <section class="policy-card icon-vivid icon-blue" id="law" data-aos="fade-up">
+            <h2><i data-lucide="gavel"></i> Governing Law</h2>
+            <p>These terms are governed by Tunisian law. Any dispute will be submitted to the exclusive jurisdiction of the
+              courts in Tunis.</p>
+          </section>
+        </div>
+      </div>
     </div>
   </main>
 
