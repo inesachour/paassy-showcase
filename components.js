@@ -16,7 +16,12 @@ const navbarHTML = `
         <li><a href="index.html#how-it-works" class="nav-link" data-i18n="nav_how">Comment ça marche</a></li>
         <li><a href="index.html#pro" class="nav-link" data-i18n="nav_pro">Paassy Pro</a></li>
         <li><a href="index.html#contact" class="nav-link" data-i18n="nav_contact">Contact</a></li>
-        <li><a href="index.html#download" class="nav-link cta-nav" data-i18n="nav_download">Télécharger</a></li>
+        <li>
+          <div class="dl-btn-container">
+            <a href="index.html#download" class="nav-link cta-nav" data-i18n="nav_download">Télécharger</a>
+            <span class="badge-soon" data-i18n="dl_soon">Bientôt</span>
+          </div>
+        </li>
       </ul>
       <div class="nav-actions">
         <button class="lang-toggle" id="lang-toggle" aria-label="Changer la langue">FR</button>

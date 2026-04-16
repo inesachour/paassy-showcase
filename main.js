@@ -82,6 +82,7 @@ const translations = {
     dl_btn_sub: "Disponible sur",
     dl_my_tickets: "Mes Billets",
     dl_cat_place: "Catégorie A · Place 24",
+    dl_soon: "Bientôt",
     // Contact
     contact_badge: "Contact",
     contact_title_1: "Parlons de votre",
@@ -194,6 +195,7 @@ const translations = {
     dl_btn_sub: "Available on",
     dl_my_tickets: "My Tickets",
     dl_cat_place: "Category A · Seat 24",
+    dl_soon: "Soon",
     // Contact
     contact_badge: "Contact",
     contact_title_1: "Let's talk about your",

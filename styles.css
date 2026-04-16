@@ -1409,6 +1409,44 @@ body {
   font-size: 1rem;
 }
 
+/* Coming Soon Badge */
+.dl-btn-container {
+  position: relative;
+  display: inline-block;
+}
+
+.badge-soon {
+  position: absolute;
+  top: -8px;
+  right: -5px;
+  background: linear-gradient(135deg, var(--purple), var(--purple-light));
+  color: #fff;
+  font-size: 0.55rem;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 100px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  z-index: 10;
+  box-shadow: 0 4px 10px rgba(91, 19, 236, 0.4);
+  pointer-events: none;
+  animation: badge-pulse 2s infinite;
+}
+
+@keyframes badge-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .badge-soon {
+    top: -6px;
+    right: -2px;
+    font-size: 0.5rem;
+  }
+}
+
 .dl-phone-float {
   display: flex;
   justify-content: center;
