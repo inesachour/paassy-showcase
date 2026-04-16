@@ -285,48 +285,38 @@
             </svg>
           </a>
         </div>
-        <div class="pro-phone-wrap" data-aos="fade-left">
-          <div class="pro-phone-glow"></div>
-          <div class="phone-frame pro-phone-frame">
-            <div class="phone-screen">
-              <div class="pro-screen">
-                <div class="pro-header">
-                  <div class="pro-logo-mini">Paassy <span>Pro</span></div>
-                  <div class="pro-role-badge" data-i18n="pro_role">Organisateur</div>
-                </div>
-                <div class="pro-stats-grid">
-                  <div class="pro-stat-card">
-                    <div class="pro-stat-val">1 247</div>
-                    <div class="pro-stat-lbl" data-i18n="pro_stat_sold">Billets vendus</div>
-                  </div>
-                  <div class="pro-stat-card">
-                    <div class="pro-stat-val">42 580 DT</div>
-                    <div class="pro-stat-lbl" data-i18n="pro_stat_rev">Revenus</div>
-                  </div>
-                </div>
-                <div class="pro-chart">
-                  <div class="chart-label" data-i18n="pro_chart_label">Ventes cette semaine</div>
-                  <div class="chart-bars">
-                    <div class="chart-bar" style="height:40%"><span>L</span></div>
-                    <div class="chart-bar" style="height:65%"><span>M</span></div>
-                    <div class="chart-bar" style="height:55%"><span>M</span></div>
-                    <div class="chart-bar" style="height:80%"><span>J</span></div>
-                    <div class="chart-bar active" style="height:100%"><span>V</span></div>
-                    <div class="chart-bar" style="height:70%"><span>S</span></div>
-                    <div class="chart-bar" style="height:45%"><span>D</span></div>
-                  </div>
-                </div>
-                <div class="pro-scanner-preview">
-                  <div class="scanner-viewfinder">
-                    <div class="scanner-corner tl"></div>
-                    <div class="scanner-corner tr"></div>
-                    <div class="scanner-corner bl"></div>
-                    <div class="scanner-corner br"></div>
-                    <div class="scanner-line"></div>
-                    <div class="scanner-qr-icon">▦</div>
-                  </div>
-                  <div class="scanner-status valid" data-i18n="pro_scan_valid">✓ Billet Valide</div>
-                </div>
+        <div class="pro-visual-column" data-aos="fade-left">
+          <div class="pro-visual-container">
+            <!-- Main Chart Card -->
+            <div class="dash-card dash-card--main">
+              <h4 data-i18n="pro_visual_stats">Tableau de Bord</h4>
+              <div class="dash-chart">
+                <div class="dash-chart--bar" style="height: 40%;"></div>
+                <div class="dash-chart--bar" style="height: 60%;"></div>
+                <div class="dash-chart--bar" style="height: 45%;"></div>
+                <div class="dash-chart--bar active" style="height: 90%;"></div>
+                <div class="dash-chart--bar" style="height: 70%;"></div>
+                <div class="dash-chart--bar" style="height: 55%;"></div>
+              </div>
+            </div>
+
+            <!-- Stat Card 1 -->
+            <div class="dash-card dash-card--stat-1" data-aos="fade-right" data-aos-delay="200">
+              <h4 data-i18n="pro_visual_revenue">Ventes</h4>
+              <div class="dash-val">1.2k <span class="dash-trend">↑</span></div>
+            </div>
+
+            <!-- Stat Card 2 -->
+            <div class="dash-card dash-card--stat-2" data-aos="fade-left" data-aos-delay="400">
+              <h4 data-i18n="pro_visual_active">Check-in</h4>
+              <div class="dash-val">85%</div>
+            </div>
+
+            <!-- Scanner Card -->
+            <div class="dash-card dash-card--scanner">
+              <h4 data-i18n="pro_visual_scanner">Scanner</h4>
+              <div class="dash-scanner-box">
+                <div class="dash-scanner-line"></div>
               </div>
             </div>
           </div>
