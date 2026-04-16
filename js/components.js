@@ -1,24 +1,29 @@
 /* ─────────────────────────────────────────────
    PAASSY — Shared Components
    Navbar & Footer HTML strings for injection
+   Now with dynamic path support for folder organization
 ───────────────────────────────────────────── */
+
+// Detect if we are in a subfolder (e.g., /pages/)
+const isSubfolder = window.location.pathname.includes('/pages/');
+const basePath = isSubfolder ? '../' : '';
 
 const navbarHTML = `
   <nav id="navbar" class="navbar">
     <div class="nav-inner container">
-      <a href="index.html" class="nav-logo" id="nav-logo-link">
-        <img src="assets/logos/paassy.png" alt="Paassy Logo" class="nav-logo-img" />
+      <a href="${basePath}index.html" class="nav-logo" id="nav-logo-link">
+        <img src="${basePath}assets/logos/paassy.png" alt="Paassy Logo" class="nav-logo-img" />
         <span class="logo-text">Paassy</span>
         <span class="logo-dot"></span>
       </a>
       <ul class="nav-links" id="nav-links">
-        <li><a href="index.html#features" class="nav-link" data-i18n="nav_features">Fonctionnalités</a></li>
-        <li><a href="index.html#how-it-works" class="nav-link" data-i18n="nav_how">Comment ça marche</a></li>
-        <li><a href="index.html#pro" class="nav-link" data-i18n="nav_pro">Paassy Pro</a></li>
-        <li><a href="index.html#contact" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+        <li><a href="${basePath}index.html#features" class="nav-link" data-i18n="nav_features">Fonctionnalités</a></li>
+        <li><a href="${basePath}index.html#how-it-works" class="nav-link" data-i18n="nav_how">Comment ça marche</a></li>
+        <li><a href="${basePath}index.html#pro" class="nav-link" data-i18n="nav_pro">Paassy Pro</a></li>
+        <li><a href="${basePath}index.html#contact" class="nav-link" data-i18n="nav_contact">Contact</a></li>
         <li>
           <div class="dl-btn-container">
-            <a href="index.html#download" class="nav-link cta-nav" data-i18n="nav_download">Télécharger</a>
+            <a href="${basePath}index.html#download" class="nav-link cta-nav" data-i18n="nav_download">Télécharger</a>
             <span class="badge-soon" data-i18n="dl_soon">Bientôt</span>
           </div>
         </li>
@@ -43,7 +48,7 @@ const footerHTML = `
       <div class="footer-top">
         <div class="footer-brand">
           <div class="footer-logo">
-            <img src="assets/logos/paassy.png" alt="Paassy" class="footer-logo-img" />
+            <img src="${basePath}assets/logos/paassy.png" alt="Paassy" class="footer-logo-img" />
             Paassy<span class="logo-dot"></span>
           </div>
           <p class="footer-tagline" data-i18n="footer_tagline">La billetterie événementielle tunisienne.</p>
@@ -55,23 +60,23 @@ const footerHTML = `
         <div class="footer-links-group">
           <h4 data-i18n="footer_app">Application</h4>
           <ul>
-            <li><a href="index.html#features" data-i18n="nav_features">Fonctionnalités</a></li>
-            <li><a href="index.html#how-it-works" data-i18n="nav_how">Comment ça marche</a></li>
-            <li><a href="index.html#download" data-i18n="nav_download">Télécharger</a></li>
+            <li><a href="${basePath}index.html#features" data-i18n="nav_features">Fonctionnalités</a></li>
+            <li><a href="${basePath}index.html#how-it-works" data-i18n="nav_how">Comment ça marche</a></li>
+            <li><a href="${basePath}index.html#download" data-i18n="nav_download">Télécharger</a></li>
           </ul>
         </div>
         <div class="footer-links-group">
           <h4 data-i18n="footer_pro">Professionnel</h4>
           <ul>
-            <li><a href="index.html#pro" data-i18n="nav_pro">Paassy Pro</a></li>
+            <li><a href="${basePath}index.html#pro" data-i18n="nav_pro">Paassy Pro</a></li>
           </ul>
         </div>
         <div class="footer-links-group">
           <h4 data-i18n="footer_company">Entreprise</h4>
           <ul>
-            <li><a href="index.html#contact" data-i18n="nav_contact">Contact</a></li>
-            <li><a href="privacy-policy.html" data-i18n="footer_privacy">Politique de confidentialité</a></li>
-            <li><a href="terms-of-use.html" data-i18n="footer_terms">Conditions d'utilisation</a></li>
+            <li><a href="${basePath}index.html#contact" data-i18n="nav_contact">Contact</a></li>
+            <li><a href="${basePath}pages/privacy-policy.html" data-i18n="footer_privacy">Politique de confidentialité</a></li>
+            <li><a href="${basePath}pages/terms-of-use.html" data-i18n="footer_terms">Conditions d'utilisation</a></li>
           </ul>
         </div>
       </div>
