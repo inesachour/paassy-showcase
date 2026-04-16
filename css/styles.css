@@ -1065,6 +1065,11 @@ body {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(91, 19, 236, 0.1));
 }
 
+.dash-card--main:hover {
+  /* Merge the positioning translate with the hover scale to prevent flickering */
+  transform: translate(-50%, -50%) scale(1.05) translateZ(10px);
+}
+
 /* Small Stat Cards */
 .dash-card--stat-1 {
   width: 140px;
