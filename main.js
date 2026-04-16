@@ -105,13 +105,13 @@ const translations = {
     contact_form_opt_3: "Presse & médias",
     contact_form_opt_4: "Autre",
     contact_form_btn: "Envoyer le message",
-    contact_form_success: '<i data-lucide="check-circle" class="success-icon"></i> Message envoyé ! Nous vous répondrons sous 24h.',
+    contact_form_success: 'Message envoyé ! Nous vous répondrons sous 24h.',
     // Footer
     footer_tagline: "La billetterie événementielle tunisienne.",
     footer_app: "Application",
     footer_pro: "Professionnel",
     footer_company: "Entreprise",
-    footer_copyright: '© 2025 Paassy. Tous droits réservés. Fait avec <i data-lucide="heart" class="heart-icon"></i> en Tunisie.',
+    footer_copyright: '© 2025 Paassy. Tous droits réservés. Fait avec ❤️ en Tunisie.',
     footer_privacy: "Politique de confidentialité",
     footer_terms: "Conditions d'utilisation"
   },
@@ -218,13 +218,13 @@ const translations = {
     contact_form_opt_3: "Press & media",
     contact_form_opt_4: "Other",
     contact_form_btn: "Send Message",
-    contact_form_success: '<i data-lucide="check-circle" class="success-icon"></i> Message sent! We will reply within 24 hours.',
+    contact_form_success: 'Message sent! We will reply within 24 hours.',
     // Footer
     footer_tagline: "The Tunisian event ticketing system.",
     footer_app: "Application",
     footer_pro: "Professional",
     footer_company: "Company",
-    footer_copyright: '© 2025 Paassy. All rights reserved. Made with <i data-lucide="heart" class="heart-icon"></i> in Tunisia.',
+    footer_copyright: '© 2025 Paassy. All rights reserved. Made with ❤️ in Tunisia.',
     footer_privacy: "Privacy Policy",
     footer_terms: "Terms of Use"
   }
