@@ -1393,6 +1393,11 @@ body {
   transition: var(--transition);
 }
 
+.dl-btn svg,
+.btn svg {
+  fill: currentColor;
+}
+
 .dl-btn:hover {
   background: rgba(91, 19, 236, .1);
   border-color: var(--purple-light);
