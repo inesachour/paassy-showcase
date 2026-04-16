@@ -392,7 +392,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const newTheme = isDark ? 'light' : 'dark';
     htmlElement.setAttribute('data-theme', newTheme);
     localStorage.setItem('theme', newTheme);
+    
+    // Swap Screenshot
+    const heroImg = document.getElementById('hero-screenshot');
+    if (heroImg) {
+      heroImg.src = `assets/screenshots/${newTheme}/discover_screen.png`;
+    }
   });
+
+  // Init Screenshot
+  const heroImg = document.getElementById('hero-screenshot');
+  if (heroImg) {
+    heroImg.src = `assets/screenshots/${currentTheme}/discover_screen.png`;
+  }
 
 
   /* ── 2. LANGUAGE SWITCHER ── */

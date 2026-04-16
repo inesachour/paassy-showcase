@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html lang="fr" data-theme="dark">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Paassy — La réservation d'événements en Tunisie</title>
-  <meta name="description" content="Paassy est la première application tunisienne de réservation d'événements. Découvrez concerts, festivals, spectacles et bien plus. Réservez vos places en quelques secondes." />
+  <meta name="description"
+    content="Paassy est la première application tunisienne de réservation d'événements. Découvrez concerts, festivals, spectacles et bien plus. Réservez vos places en quelques secondes." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800;900&family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700;800;900&family=Titillium+Web:wght@300;400;600;700&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
 
   <!-- ── NAV ── -->
   <nav id="navbar" class="navbar">
     <div class="nav-inner container">
       <a href="#" class="nav-logo" id="nav-logo-link">
-        <img src="assets/paassy.png" alt="Paassy Logo" class="nav-logo-img" />
+        <img src="assets/logos/paassy.png" alt="Paassy Logo" class="nav-logo-img" />
         <span class="logo-text">Paassy</span>
         <span class="logo-dot"></span>
       </a>
       <ul class="nav-links" id="nav-links">
-        <li><a href="#features"     class="nav-link" data-i18n="nav_features">Fonctionnalités</a></li>
-        <li><a href="#events"       class="nav-link" data-i18n="nav_events">Événements</a></li>
+        <li><a href="#features" class="nav-link" data-i18n="nav_features">Fonctionnalités</a></li>
+        <li><a href="#events" class="nav-link" data-i18n="nav_events">Événements</a></li>
         <li><a href="#how-it-works" class="nav-link" data-i18n="nav_how">Comment ça marche</a></li>
-        <li><a href="#pro"          class="nav-link" data-i18n="nav_pro">Paassy Pro</a></li>
-        <li><a href="#contact"      class="nav-link" data-i18n="nav_contact">Contact</a></li>
-        <li><a href="#download"     class="nav-link cta-nav" data-i18n="nav_download">Télécharger</a></li>
+        <li><a href="#pro" class="nav-link" data-i18n="nav_pro">Paassy Pro</a></li>
+        <li><a href="#contact" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+        <li><a href="#download" class="nav-link cta-nav" data-i18n="nav_download">Télécharger</a></li>
       </ul>
       <div class="nav-actions">
         <button class="lang-toggle" id="lang-toggle" aria-label="Changer la langue">FR</button>
@@ -60,15 +65,22 @@
           <span data-i18n="hero_title_3">à fond.</span>
         </h1>
         <p class="hero-subtitle" data-i18n="hero_subtitle">
-          Découvrez, réservez et profitez des meilleurs événements tunisiens — concerts, festivals, spectacles et plus encore — directement depuis votre smartphone.
+          Découvrez, réservez et profitez des meilleurs événements tunisiens — concerts, festivals, spectacles et plus
+          encore — directement depuis votre smartphone.
         </p>
         <div class="hero-cta">
           <a href="#download" id="hero-cta-app" class="btn btn-primary">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.7 9.05 7.37c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.39-1.32 2.76-2.53 4.02zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.7 9.05 7.37c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.39-1.32 2.76-2.53 4.02zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
+            </svg>
             App Store
           </a>
           <a href="#download" id="hero-cta-play" class="btn btn-secondary">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.37.19.77.24 1.15.15l.11-.06 11.27-11.27-2.41-2.41L3.18 23.76zm14.67-14.43L15.3 7.2 3.55.5C3.13.26 2.69.26 2.35.55l10.1 10.1 5.4-1.32zM20.4 10.66l-2.88-1.65-2.63 2.63 2.63 2.63 2.91-1.67c.83-.48.83-1.45-.03-1.94zM3.55 23.45c.34.3.78.3 1.2.05l11.76-6.74-2.41-2.41L3.55 23.45z"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M3.18 23.76c.37.19.77.24 1.15.15l.11-.06 11.27-11.27-2.41-2.41L3.18 23.76zm14.67-14.43L15.3 7.2 3.55.5C3.13.26 2.69.26 2.35.55l10.1 10.1 5.4-1.32zM20.4 10.66l-2.88-1.65-2.63 2.63 2.63 2.63 2.91-1.67c.83-.48.83-1.45-.03-1.94zM3.55 23.45c.34.3.78.3 1.2.05l11.76-6.74-2.41-2.41L3.55 23.45z" />
+            </svg>
             Google Play
           </a>
         </div>
@@ -94,47 +106,7 @@
         <div class="phone-glow"></div>
         <div class="phone-frame">
           <div class="phone-screen">
-            <div class="app-screen">
-              <div class="app-topbar">
-                <div class="app-search">
-                  <div class="search-icon">🔍</div>
-                  <span data-i18n="app_search_placeholder">Rechercher un événement…</span>
-                </div>
-                <div class="app-basket">🎫</div>
-              </div>
-              <div class="app-section-label" data-i18n="app_trends">🔥 Tendances</div>
-              <div class="event-card-main">
-                <div class="event-card-img gradient-card-1">
-                  <div class="event-tag" data-i18n="app_concert">Concert</div>
-                  <div class="event-card-info">
-                    <div class="event-name" data-i18n="app_carthage">Nuit Arabe — Carthage</div>
-                    <div class="event-meta">📍 Tunis &nbsp;|&nbsp; 25 Mai 2025</div>
-                    <div class="event-price"><span data-i18n="app_from">À partir de</span> <strong>35 DT</strong></div>
-                  </div>
-                </div>
-              </div>
-              <div class="app-section-label" data-i18n="app_shows">🎭 Spectacles</div>
-              <div class="event-cards-row">
-                <div class="event-card-sm gradient-card-2">
-                  <div class="event-sm-tag" data-i18n="app_theatre">Théâtre</div>
-                  <div class="event-sm-name" data-i18n="app_jasmin">Festival Jasmin</div>
-                  <div class="event-sm-price">20 DT</div>
-                </div>
-                <div class="event-card-sm gradient-card-3">
-                  <div class="event-sm-tag" data-i18n="app_djset">DJ Set</div>
-                  <div class="event-sm-name" data-i18n="app_beach">Beach Party Hammamet</div>
-                  <div class="event-sm-price">45 DT</div>
-                </div>
-              </div>
-              <div class="app-section-label" data-i18n="app_venues">📍 Lieux recommandés</div>
-              <div class="venue-card">
-                <div class="venue-icon">🏟️</div>
-                <div>
-                  <div class="venue-name" data-i18n="app_amphitheatre">Amphithéâtre de Carthage</div>
-                  <div class="venue-loc" data-i18n="app_carthage_tun">Carthage, Tunisie</div>
-                </div>
-              </div>
-            </div>
+            <img src="assets/screenshots/dark/discover_screen.png" alt="Paassy App" class="app-screenshot" id="hero-screenshot" />
           </div>
         </div>
         <div class="floating-badge badge-a">
@@ -155,7 +127,9 @@
     </div>
 
     <div class="hero-scroll-hint">
-      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
     </div>
   </section>
 
@@ -182,13 +156,17 @@
           <span data-i18n="feat_title_1">Tout ce dont vous avez</span><br />
           <span class="gradient-text" data-i18n="feat_title_2">besoin</span>
         </h2>
-        <p class="section-subtitle" data-i18n="feat_subtitle">Une expérience complète de la découverte au billet en main, pensée pour la Tunisie.</p>
+        <p class="section-subtitle" data-i18n="feat_subtitle">Une expérience complète de la découverte au billet en
+          main, pensée pour la Tunisie.</p>
       </div>
       <div class="features-grid">
         <div class="feature-card feature-card--large" data-aos="fade-up" data-delay="0">
-          <div class="feature-icon-wrap"><div class="feature-icon">🔍</div></div>
+          <div class="feature-icon-wrap">
+            <div class="feature-icon">🔍</div>
+          </div>
           <h3 class="feature-title" data-i18n="feat_1_title">Découverte intelligente</h3>
-          <p class="feature-desc" data-i18n="feat_1_desc">Explorez les événements tendance, filtrez par catégorie, ville, date et fourchette de prix. Des sections dédiées par genre musical, théâtre, sport et plus.</p>
+          <p class="feature-desc" data-i18n="feat_1_desc">Explorez les événements tendance, filtrez par catégorie,
+            ville, date et fourchette de prix. Des sections dédiées par genre musical, théâtre, sport et plus.</p>
           <div class="feature-chips">
             <span class="chip" data-i18n="feat_1_chip1">Concerts</span>
             <span class="chip" data-i18n="feat_1_chip2">Festivals</span>
@@ -198,39 +176,60 @@
           </div>
         </div>
         <div class="feature-card" data-aos="fade-up" data-delay="100">
-          <div class="feature-icon-wrap"><div class="feature-icon">📍</div></div>
+          <div class="feature-icon-wrap">
+            <div class="feature-icon">📍</div>
+          </div>
           <h3 class="feature-title" data-i18n="feat_2_title">Lieux &amp; Venues</h3>
-          <p class="feature-desc" data-i18n="feat_2_desc">Explorez les salles et lieux phares de Tunisie et accédez directement à leur programmation complète.</p>
+          <p class="feature-desc" data-i18n="feat_2_desc">Explorez les salles et lieux phares de Tunisie et accédez
+            directement à leur programmation complète.</p>
         </div>
         <div class="feature-card" data-aos="fade-up" data-delay="150">
-          <div class="feature-icon-wrap"><div class="feature-icon">🛒</div></div>
+          <div class="feature-icon-wrap">
+            <div class="feature-icon">🛒</div>
+          </div>
           <h3 class="feature-title" data-i18n="feat_3_title">Panier express</h3>
-          <p class="feature-desc" data-i18n="feat_3_desc">Réservez vos places en quelques gestes. Votre panier est sécurisé pendant 10 minutes, le temps de confirmer votre paiement.</p>
+          <p class="feature-desc" data-i18n="feat_3_desc">Réservez vos places en quelques gestes. Votre panier est
+            sécurisé pendant 10 minutes, le temps de confirmer votre paiement.</p>
         </div>
         <div class="feature-card" data-aos="fade-up" data-delay="200">
-          <div class="feature-icon-wrap"><div class="feature-icon">💳</div></div>
+          <div class="feature-icon-wrap">
+            <div class="feature-icon">💳</div>
+          </div>
           <h3 class="feature-title" data-i18n="feat_4_title">Paiement sécurisé</h3>
-          <p class="feature-desc" data-i18n="feat_4_desc">Payez en toute confiance via Clictopay, la solution de paiement en ligne de référence en Tunisie.</p>
+          <p class="feature-desc" data-i18n="feat_4_desc">Payez en toute confiance via Clictopay, la solution de
+            paiement en ligne de référence en Tunisie.</p>
         </div>
         <div class="feature-card" data-aos="fade-up" data-delay="250">
-          <div class="feature-icon-wrap"><div class="feature-icon">🎟️</div></div>
+          <div class="feature-icon-wrap">
+            <div class="feature-icon">🎟️</div>
+          </div>
           <h3 class="feature-title" data-i18n="feat_5_title">Billets numériques QR</h3>
-          <p class="feature-desc" data-i18n="feat_5_desc">Vos billets arrivent instantanément dans l'app sous forme de QR codes. Présentez-les à l'entrée, sans impression requise.</p>
+          <p class="feature-desc" data-i18n="feat_5_desc">Vos billets arrivent instantanément dans l'app sous forme de
+            QR codes. Présentez-les à l'entrée, sans impression requise.</p>
         </div>
         <div class="feature-card" data-aos="fade-up" data-delay="300">
-          <div class="feature-icon-wrap"><div class="feature-icon">🌙</div></div>
+          <div class="feature-icon-wrap">
+            <div class="feature-icon">🌙</div>
+          </div>
           <h3 class="feature-title" data-i18n="feat_6_title">Mode sombre &amp; clair</h3>
-          <p class="feature-desc" data-i18n="feat_6_desc">Profitez d'une interface élégante adaptée à votre préférence — disponible en mode clair ou sombre.</p>
+          <p class="feature-desc" data-i18n="feat_6_desc">Profitez d'une interface élégante adaptée à votre préférence —
+            disponible en mode clair ou sombre.</p>
         </div>
         <div class="feature-card" data-aos="fade-up" data-delay="350">
-          <div class="feature-icon-wrap"><div class="feature-icon">🌍</div></div>
+          <div class="feature-icon-wrap">
+            <div class="feature-icon">🌍</div>
+          </div>
           <h3 class="feature-title" data-i18n="feat_7_title">Bilingue FR / EN</h3>
-          <p class="feature-desc" data-i18n="feat_7_desc">Naviguez en français ou en anglais. L'application s'adapte automatiquement à votre langue préférée.</p>
+          <p class="feature-desc" data-i18n="feat_7_desc">Naviguez en français ou en anglais. L'application s'adapte
+            automatiquement à votre langue préférée.</p>
         </div>
         <div class="feature-card" data-aos="fade-up" data-delay="400">
-          <div class="feature-icon-wrap"><div class="feature-icon">🔐</div></div>
+          <div class="feature-icon-wrap">
+            <div class="feature-icon">🔐</div>
+          </div>
           <h3 class="feature-title" data-i18n="feat_8_title">Connexion simplifiée</h3>
-          <p class="feature-desc" data-i18n="feat_8_desc">Authentification rapide par email avec code OTP, ou en un clic avec Google ou Apple.</p>
+          <p class="feature-desc" data-i18n="feat_8_desc">Authentification rapide par email avec code OTP, ou en un clic
+            avec Google ou Apple.</p>
         </div>
       </div>
     </div>
@@ -244,16 +243,19 @@
       <div class="section-header" data-aos="fade-up">
         <div class="section-badge" data-i18n="ev_badge">Événements</div>
         <h2 class="section-title">
-          <span data-i18n="ev_title_1">Des événements pour</span> <span class="gradient-text" data-i18n="ev_title_2">tous les goûts</span>
+          <span data-i18n="ev_title_1">Des événements pour</span> <span class="gradient-text"
+            data-i18n="ev_title_2">tous les goûts</span>
         </h2>
-        <p class="section-subtitle" data-i18n="ev_subtitle">Concerts, festivals, spectacles, sport — tout ce qui fait vibrer la Tunisie, au bout de vos doigts.</p>
+        <p class="section-subtitle" data-i18n="ev_subtitle">Concerts, festivals, spectacles, sport — tout ce qui fait
+          vibrer la Tunisie, au bout de vos doigts.</p>
       </div>
 
       <!-- Category tabs -->
       <div class="events-tabs" data-aos="fade-up" data-delay="50">
         <button class="event-tab active" data-tab="all" id="tab-all" data-i18n="ev_tab_all">Tout</button>
         <button class="event-tab" data-tab="concerts" id="tab-concerts" data-i18n="ev_tab_concerts">🎵 Concerts</button>
-        <button class="event-tab" data-tab="festivals" id="tab-festivals" data-i18n="ev_tab_festivals">🎪 Festivals</button>
+        <button class="event-tab" data-tab="festivals" id="tab-festivals" data-i18n="ev_tab_festivals">🎪
+          Festivals</button>
         <button class="event-tab" data-tab="theatre" id="tab-theatre" data-i18n="ev_tab_theatre">🎭 Théâtre</button>
         <button class="event-tab" data-tab="sport" id="tab-sport" data-i18n="ev_tab_sport">⚽ Sport</button>
         <button class="event-tab" data-tab="art" id="tab-art" data-i18n="ev_tab_art">🎨 Art</button>
@@ -373,7 +375,9 @@
         <p data-i18n="ev_footer_p">Et des centaines d'autres événements à découvrir sur l'application…</p>
         <a href="#download" class="btn btn-primary" id="events-dl-btn" data-i18n="ev_all_cta">
           Voir tous les événements
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
         </a>
       </div>
     </div>
@@ -385,9 +389,11 @@
       <div class="section-header" data-aos="fade-up">
         <div class="section-badge" data-i18n="how_badge">Simple &amp; Rapide</div>
         <h2 class="section-title">
-          <span data-i18n="how_title_1">Réservez en</span> <span class="gradient-text" data-i18n="how_title_2">3 étapes</span>
+          <span data-i18n="how_title_1">Réservez en</span> <span class="gradient-text" data-i18n="how_title_2">3
+            étapes</span>
         </h2>
-        <p class="section-subtitle" data-i18n="how_subtitle">De la découverte au billet, tout se fait en quelques secondes.</p>
+        <p class="section-subtitle" data-i18n="how_subtitle">De la découverte au billet, tout se fait en quelques
+          secondes.</p>
       </div>
       <div class="steps-wrap">
         <div class="steps-line"></div>
@@ -396,7 +402,8 @@
           <div class="step-card">
             <div class="step-icon">🔍</div>
             <h3 class="step-title" data-i18n="how_1_title">Découvrez</h3>
-            <p class="step-desc" data-i18n="how_1_desc">Parcourez les événements par tendances ou catégories. Filtrez par ville, dates et budget pour trouver exactement ce que vous cherchez.</p>
+            <p class="step-desc" data-i18n="how_1_desc">Parcourez les événements par tendances ou catégories. Filtrez
+              par ville, dates et budget pour trouver exactement ce que vous cherchez.</p>
           </div>
         </div>
         <div class="step" data-aos="fade-up" data-delay="150">
@@ -404,7 +411,8 @@
           <div class="step-card">
             <div class="step-icon">🛒</div>
             <h3 class="step-title" data-i18n="how_2_title">Réservez</h3>
-            <p class="step-desc" data-i18n="how_2_desc">Choisissez vos places, ajoutez-les au panier et confirmez votre paiement sécurisé via Clictopay en quelques tapages.</p>
+            <p class="step-desc" data-i18n="how_2_desc">Choisissez vos places, ajoutez-les au panier et confirmez votre
+              paiement sécurisé via Clictopay en quelques tapages.</p>
           </div>
         </div>
         <div class="step" data-aos="fade-up" data-delay="300">
@@ -412,7 +420,8 @@
           <div class="step-card">
             <div class="step-icon">🎉</div>
             <h3 class="step-title" data-i18n="how_3_title">Profitez</h3>
-            <p class="step-desc" data-i18n="how_3_desc">Recevez vos billets QR instantanément dans l'app. Présentez-les à l'entrée et vivez l'événement pleinement.</p>
+            <p class="step-desc" data-i18n="how_3_desc">Recevez vos billets QR instantanément dans l'app. Présentez-les
+              à l'entrée et vivez l'événement pleinement.</p>
           </div>
         </div>
       </div>
@@ -431,40 +440,48 @@
             <span data-i18n="pro_title_1">Gérez vos événements</span><br />
             <span data-i18n="pro_title_2">avec Paassy Pro</span>
           </h2>
-          <p class="pro-subtitle" data-i18n="pro_subtitle">Une application dédiée aux organisateurs d'événements et au personnel de contrôle pour une gestion complète, en temps réel.</p>
+          <p class="pro-subtitle" data-i18n="pro_subtitle">Une application dédiée aux organisateurs d'événements et au
+            personnel de contrôle pour une gestion complète, en temps réel.</p>
           <div class="pro-features">
             <div class="pro-feature-item" data-aos="fade-right" data-delay="50">
               <div class="pro-feature-icon">📊</div>
               <div>
                 <h4 data-i18n="pro_1_title">Tableau de bord &amp; Statistiques</h4>
-                <p data-i18n="pro_1_desc">Suivez les ventes de billets, les revenus et l'affluence en temps réel depuis votre tableau de bord.</p>
+                <p data-i18n="pro_1_desc">Suivez les ventes de billets, les revenus et l'affluence en temps réel depuis
+                  votre tableau de bord.</p>
               </div>
             </div>
             <div class="pro-feature-item" data-aos="fade-right" data-delay="100">
               <div class="pro-feature-icon">📅</div>
               <div>
                 <h4 data-i18n="pro_2_title">Gestion des événements</h4>
-                <p data-i18n="pro_2_desc">Créez et gérez vos événements, définissez les catégories de places et contrôlez la disponibilité.</p>
+                <p data-i18n="pro_2_desc">Créez et gérez vos événements, définissez les catégories de places et
+                  contrôlez la disponibilité.</p>
               </div>
             </div>
             <div class="pro-feature-item" data-aos="fade-right" data-delay="150">
               <div class="pro-feature-icon">📷</div>
               <div>
                 <h4 data-i18n="pro_3_title">Scanner QR instantané</h4>
-                <p data-i18n="pro_3_desc">Le personnel valide les billets en un scan. Détection immédiate des billets valides ou invalides.</p>
+                <p data-i18n="pro_3_desc">Le personnel valide les billets en un scan. Détection immédiate des billets
+                  valides ou invalides.</p>
               </div>
             </div>
             <div class="pro-feature-item" data-aos="fade-right" data-delay="200">
               <div class="pro-feature-icon">👥</div>
               <div>
                 <h4 data-i18n="pro_4_title">Gestion du personnel</h4>
-                <p data-i18n="pro_4_desc">Attribuez des rôles à votre équipe : organisateur ou agent de contrôle, avec des accès distincts.</p>
+                <p data-i18n="pro_4_desc">Attribuez des rôles à votre équipe : organisateur ou agent de contrôle, avec
+                  des accès distincts.</p>
               </div>
             </div>
           </div>
-          <a href="#contact" id="pro-cta" class="btn btn-primary" style="margin-top:2rem;display:inline-flex;" data-i18n="pro_btn">
+          <a href="#contact" id="pro-cta" class="btn btn-primary" style="margin-top:2rem;display:inline-flex;"
+            data-i18n="pro_btn">
             Devenir partenaire
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
           </a>
         </div>
         <div class="pro-phone-wrap" data-aos="fade-left">
@@ -523,14 +540,18 @@
       <div class="section-header" data-aos="fade-up">
         <div class="section-badge" data-i18n="test_badge">Témoignages</div>
         <h2 class="section-title">
-          <span data-i18n="test_title_1">Ils adorent</span> <span class="gradient-text" data-i18n="test_title_2">Paassy</span>
+          <span data-i18n="test_title_1">Ils adorent</span> <span class="gradient-text"
+            data-i18n="test_title_2">Paassy</span>
         </h2>
-        <p class="section-subtitle" data-i18n="test_subtitle">Des milliers d'utilisateurs nous font confiance en Tunisie.</p>
+        <p class="section-subtitle" data-i18n="test_subtitle">Des milliers d'utilisateurs nous font confiance en
+          Tunisie.</p>
       </div>
       <div class="testimonials-grid">
         <div class="testimonial-card" data-aos="fade-up" data-delay="0">
           <div class="stars">★★★★★</div>
-          <p class="testimonial-text" data-i18n="test_1_text">"J'ai réservé mes billets pour le festival en moins de 2 minutes. L'interface est magnifique et le paiement via Clictopay est ultra-simple. Je ne peux plus m'en passer !"</p>
+          <p class="testimonial-text" data-i18n="test_1_text">"J'ai réservé mes billets pour le festival en moins de 2
+            minutes. L'interface est magnifique et le paiement via Clictopay est ultra-simple. Je ne peux plus m'en
+            passer !"</p>
           <div class="testimonial-author">
             <div class="author-avatar avatar-1">AK</div>
             <div>
@@ -541,7 +562,9 @@
         </div>
         <div class="testimonial-card testimonial-card--featured" data-aos="fade-up" data-delay="100">
           <div class="stars">★★★★★</div>
-          <p class="testimonial-text" data-i18n="test_2_text">"En tant qu'organisatrice, Paassy Pro m'a complètement changé la vie. Je vois les statistiques en direct, mon équipe scanne les billets facilement. C'est vraiment professionnel."</p>
+          <p class="testimonial-text" data-i18n="test_2_text">"En tant qu'organisatrice, Paassy Pro m'a complètement
+            changé la vie. Je vois les statistiques en direct, mon équipe scanne les billets facilement. C'est vraiment
+            professionnel."</p>
           <div class="testimonial-author">
             <div class="author-avatar avatar-2">SB</div>
             <div>
@@ -552,7 +575,9 @@
         </div>
         <div class="testimonial-card" data-aos="fade-up" data-delay="200">
           <div class="stars">★★★★★</div>
-          <p class="testimonial-text" data-i18n="test_3_text">"Le QR code à l'entrée c'est tellement pratique. Plus besoin d'imprimer mes billets. J'ai utilisé Paassy pour 3 concerts cette année et tout s'est passé parfaitement."</p>
+          <p class="testimonial-text" data-i18n="test_3_text">"Le QR code à l'entrée c'est tellement pratique. Plus
+            besoin d'imprimer mes billets. J'ai utilisé Paassy pour 3 concerts cette année et tout s'est passé
+            parfaitement."</p>
           <div class="testimonial-author">
             <div class="author-avatar avatar-3">RM</div>
             <div>
@@ -577,17 +602,24 @@
             <span data-i18n="dl_title_1">Prêt à vivre</span><br />
             <span class="gradient-text" data-i18n="dl_title_2">l'expérience Paassy</span> ?
           </h2>
-          <p class="dl-subtitle" data-i18n="dl_subtitle">Rejoignez des milliers de Tunisiens qui découvrent et réservent leurs événements préférés avec Paassy. Gratuit, simple et sécurisé.</p>
+          <p class="dl-subtitle" data-i18n="dl_subtitle">Rejoignez des milliers de Tunisiens qui découvrent et réservent
+            leurs événements préférés avec Paassy. Gratuit, simple et sécurisé.</p>
           <div class="dl-btns">
             <a href="#" id="dl-appstore" class="dl-btn">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.7 9.05 7.37c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.39-1.32 2.76-2.53 4.02zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.7 9.05 7.37c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.39-1.32 2.76-2.53 4.02zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
+              </svg>
               <div>
                 <div class="dl-btn-sub" data-i18n="dl_btn_sub">Disponible sur</div>
                 <div class="dl-btn-main">App Store</div>
               </div>
             </a>
             <a href="#" id="dl-playstore" class="dl-btn">
-              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.37.19.77.24 1.15.15l.11-.06 11.27-11.27-2.41-2.41L3.18 23.76zm14.67-14.43L15.3 7.2 3.55.5C3.13.26 2.69.26 2.35.55l10.1 10.1 5.4-1.32zM20.4 10.66l-2.88-1.65-2.63 2.63 2.63 2.63 2.91-1.67c.83-.48.83-1.45-.03-1.94zM3.55 23.45c.34.3.78.3 1.2.05l11.76-6.74-2.41-2.41L3.55 23.45z"/></svg>
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M3.18 23.76c.37.19.77.24 1.15.15l.11-.06 11.27-11.27-2.41-2.41L3.18 23.76zm14.67-14.43L15.3 7.2 3.55.5C3.13.26 2.69.26 2.35.55l10.1 10.1 5.4-1.32zM20.4 10.66l-2.88-1.65-2.63 2.63 2.63 2.63 2.91-1.67c.83-.48.83-1.45-.03-1.94zM3.55 23.45c.34.3.78.3 1.2.05l11.76-6.74-2.41-2.41L3.55 23.45z" />
+              </svg>
               <div>
                 <div class="dl-btn-sub" data-i18n="dl_btn_sub">Disponible sur</div>
                 <div class="dl-btn-main">Google Play</div>
@@ -607,11 +639,41 @@
                   <div class="ticket-type" data-i18n="dl_cat_place">Catégorie A · Place 24</div>
                   <div class="qr-zone">
                     <div class="qr-mock">
-                      <div class="qr-row"><div class="qr-b"></div><div class="qr-w"></div><div class="qr-b"></div><div class="qr-b"></div><div class="qr-w"></div></div>
-                      <div class="qr-row"><div class="qr-w"></div><div class="qr-b"></div><div class="qr-w"></div><div class="qr-b"></div><div class="qr-b"></div></div>
-                      <div class="qr-row"><div class="qr-b"></div><div class="qr-b"></div><div class="qr-w"></div><div class="qr-w"></div><div class="qr-b"></div></div>
-                      <div class="qr-row"><div class="qr-w"></div><div class="qr-b"></div><div class="qr-b"></div><div class="qr-w"></div><div class="qr-b"></div></div>
-                      <div class="qr-row"><div class="qr-b"></div><div class="qr-w"></div><div class="qr-b"></div><div class="qr-b"></div><div class="qr-w"></div></div>
+                      <div class="qr-row">
+                        <div class="qr-b"></div>
+                        <div class="qr-w"></div>
+                        <div class="qr-b"></div>
+                        <div class="qr-b"></div>
+                        <div class="qr-w"></div>
+                      </div>
+                      <div class="qr-row">
+                        <div class="qr-w"></div>
+                        <div class="qr-b"></div>
+                        <div class="qr-w"></div>
+                        <div class="qr-b"></div>
+                        <div class="qr-b"></div>
+                      </div>
+                      <div class="qr-row">
+                        <div class="qr-b"></div>
+                        <div class="qr-b"></div>
+                        <div class="qr-w"></div>
+                        <div class="qr-w"></div>
+                        <div class="qr-b"></div>
+                      </div>
+                      <div class="qr-row">
+                        <div class="qr-w"></div>
+                        <div class="qr-b"></div>
+                        <div class="qr-b"></div>
+                        <div class="qr-w"></div>
+                        <div class="qr-b"></div>
+                      </div>
+                      <div class="qr-row">
+                        <div class="qr-b"></div>
+                        <div class="qr-w"></div>
+                        <div class="qr-b"></div>
+                        <div class="qr-b"></div>
+                        <div class="qr-w"></div>
+                      </div>
                     </div>
                   </div>
                   <div class="ticket-badge">1 / 2</div>
@@ -630,9 +692,11 @@
       <div class="section-header" data-aos="fade-up">
         <div class="section-badge" data-i18n="contact_badge">Contact</div>
         <h2 class="section-title">
-          <span data-i18n="contact_title_1">Parlons de votre</span> <span class="gradient-text" data-i18n="contact_title_2">prochain événement</span>
+          <span data-i18n="contact_title_1">Parlons de votre</span> <span class="gradient-text"
+            data-i18n="contact_title_2">prochain événement</span>
         </h2>
-        <p class="section-subtitle" data-i18n="contact_subtitle">Organisateur, partenaire ou simple curiosité — notre équipe est là pour vous répondre.</p>
+        <p class="section-subtitle" data-i18n="contact_subtitle">Organisateur, partenaire ou simple curiosité — notre
+          équipe est là pour vous répondre.</p>
       </div>
 
       <div class="contact-inner">
@@ -666,9 +730,21 @@
             </div>
           </div>
           <div class="contact-social-row">
-            <a href="#" class="social-link" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-            <a href="#" class="social-link" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-            <a href="#" class="social-link" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="#" class="social-link" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24"
+                fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg></a>
+            <a href="#" class="social-link" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24"
+                fill="currentColor">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
+                <circle cx="4" cy="4" r="2" />
+              </svg></a>
           </div>
         </div>
 
@@ -676,7 +752,8 @@
           <div class="form-row">
             <div class="form-group">
               <label for="contact-name" data-i18n="contact_form_name">Nom complet</label>
-              <input type="text" id="contact-name" name="name" placeholder="Votre nom" data-i18n-placeholder="contact_form_placeholder_name" required />
+              <input type="text" id="contact-name" name="name" placeholder="Votre nom"
+                data-i18n-placeholder="contact_form_placeholder_name" required />
             </div>
             <div class="form-group">
               <label for="contact-email" data-i18n="contact_form_email">Email</label>
@@ -695,11 +772,14 @@
           </div>
           <div class="form-group">
             <label for="contact-message" data-i18n="contact_form_msg">Message</label>
-            <textarea id="contact-message" name="message" rows="5" placeholder="Décrivez votre demande…" data-i18n-placeholder="contact_form_placeholder_msg" required></textarea>
+            <textarea id="contact-message" name="message" rows="5" placeholder="Décrivez votre demande…"
+              data-i18n-placeholder="contact_form_placeholder_msg" required></textarea>
           </div>
           <button type="submit" class="btn btn-primary form-submit" id="contact-submit" data-i18n="contact_form_btn">
             Envoyer le message
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+            </svg>
           </button>
           <div class="form-success" id="form-success" data-i18n="contact_form_success">
             ✅ Message envoyé ! Nous vous répondrons sous 24h.
@@ -715,47 +795,58 @@
       <div class="section-header" data-aos="fade-up">
         <div class="section-badge" data-i18n="privacy_badge">Confidentialité</div>
         <h2 class="section-title">
-          <span data-i18n="privacy_title_1">Politique de</span> <span class="gradient-text" data-i18n="privacy_title_2">confidentialité</span>
+          <span data-i18n="privacy_title_1">Politique de</span> <span class="gradient-text"
+            data-i18n="privacy_title_2">confidentialité</span>
         </h2>
-        <p class="section-subtitle" data-i18n="privacy_subtitle">Votre vie privée est notre priorité. Voici comment nous protégeons vos données.</p>
+        <p class="section-subtitle" data-i18n="privacy_subtitle">Votre vie privée est notre priorité. Voici comment nous
+          protégeons vos données.</p>
       </div>
 
       <div class="privacy-grid" data-aos="fade-up" data-delay="50">
         <div class="privacy-card">
           <div class="privacy-icon">🔒</div>
           <h3 data-i18n="privacy_item_1_title">Données collectées</h3>
-          <p data-i18n="privacy_item_1_desc">Nous collectons uniquement les données nécessaires au bon fonctionnement du service : email, numéro de téléphone et préférences de l'application. Aucune donnée superflue n'est recueillie.</p>
+          <p data-i18n="privacy_item_1_desc">Nous collectons uniquement les données nécessaires au bon fonctionnement du
+            service : email, numéro de téléphone et préférences de l'application. Aucune donnée superflue n'est
+            recueillie.</p>
         </div>
         <div class="privacy-card">
           <div class="privacy-icon">🛡️</div>
           <h3 data-i18n="privacy_item_2_title">Sécurité des paiements</h3>
-          <p data-i18n="privacy_item_2_desc">Tous les paiements sont traités par Clictopay, une plateforme sécurisée certifiée. Paassy ne stocke jamais vos informations bancaires sur ses receveurs.</p>
+          <p data-i18n="privacy_item_2_desc">Tous les paiements sont traités par Clictopay, une plateforme sécurisée
+            certifiée. Paassy ne stocke jamais vos informations bancaires sur ses receveurs.</p>
         </div>
         <div class="privacy-card">
           <div class="privacy-icon">🚫</div>
           <h3 data-i18n="privacy_item_3_title">Pas de vente de données</h3>
-          <p data-i18n="privacy_item_3_desc">Nous ne vendons, ne louons ni ne partageons jamais vos données personnelles avec des tiers à des fins commerciales. Vos informations restent les vôtres.</p>
+          <p data-i18n="privacy_item_3_desc">Nous ne vendons, ne louons ni ne partageons jamais vos données personnelles
+            avec des tiers à des fins commerciales. Vos informations restent les vôtres.</p>
         </div>
         <div class="privacy-card">
           <div class="privacy-icon">✏️</div>
           <h3 data-i18n="privacy_item_4_title">Vos droits</h3>
-          <p data-i18n="privacy_item_4_desc">Vous pouvez à tout moment accéder, modifier ou supprimer vos données personnelles depuis l'application ou en nous contactant à <strong>privacy@paassy.tn</strong>.</p>
+          <p data-i18n="privacy_item_4_desc">Vous pouvez à tout moment accéder, modifier ou supprimer vos données
+            personnelles depuis l'application ou en nous contactant à <strong>privacy@paassy.tn</strong>.</p>
         </div>
         <div class="privacy-card">
           <div class="privacy-icon">☁️</div>
           <h3 data-i18n="privacy_item_5_title">Hébergement &amp; Firebase</h3>
-          <p data-i18n="privacy_item_5_desc">L'ensemble de nos données est hébergé via Firebase (Google Cloud), qui offre un niveau de sécurité et de conformité de niveau entreprise.</p>
+          <p data-i18n="privacy_item_5_desc">L'ensemble de nos données est hébergé via Firebase (Google Cloud), qui
+            offre un niveau de sécurité et de conformité de niveau entreprise.</p>
         </div>
         <div class="privacy-card">
           <div class="privacy-icon">📜</div>
           <h3 data-i18n="privacy_item_6_title">Conformité légale</h3>
-          <p data-i18n="privacy_item_6_desc">Paassy respecte la réglementation tunisienne en matière de protection des données personnelles (INPDP) ainsi que les meilleures pratiques internationales.</p>
+          <p data-i18n="privacy_item_6_desc">Paassy respecte la réglementation tunisienne en matière de protection des
+            données personnelles (INPDP) ainsi que les meilleures pratiques internationales.</p>
         </div>
       </div>
 
       <div class="privacy-notice" data-aos="fade-up">
         <div class="privacy-notice-icon">ℹ️</div>
-        <p data-i18n="privacy_notice">Pour toute question relative à la confidentialité de vos données, contactez notre délégué à la protection des données à <a href="mailto:privacy@paassy.tn">privacy@paassy.tn</a>. Dernière mise à jour : Janvier 2025.</p>
+        <p data-i18n="privacy_notice">Pour toute question relative à la confidentialité de vos données, contactez notre
+          délégué à la protection des données à <a href="mailto:privacy@paassy.tn">privacy@paassy.tn</a>. Dernière mise
+          à jour : Janvier 2025.</p>
       </div>
     </div>
   </section>
@@ -771,9 +862,21 @@
           </div>
           <p class="footer-tagline" data-i18n="footer_tagline">La billetterie événementielle tunisienne.</p>
           <div class="footer-socials">
-            <a href="#" class="social-link" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-            <a href="#" class="social-link" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
-            <a href="#" class="social-link" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="#" class="social-link" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24"
+                fill="currentColor">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg></a>
+            <a href="#" class="social-link" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg></a>
+            <a href="#" class="social-link" aria-label="Twitter"><svg width="18" height="18" viewBox="0 0 24 24"
+                fill="currentColor">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg></a>
           </div>
         </div>
         <div class="footer-links-group">
@@ -817,4 +920,5 @@
 
   <script src="main.js"></script>
 </body>
+
 </html>

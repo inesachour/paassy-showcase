@@ -269,33 +269,13 @@ body {
 .phone-screen { width: 100%; height: 100%; border-radius: 28px; overflow: hidden; background: var(--bg); }
 
 /* ── HERO PHONE APP UI ── */
-.app-screen { padding: 28px 10px 10px; height: 100%; overflow: hidden; }
-.app-topbar { display: flex; gap: 8px; align-items: center; margin-bottom: 12px; }
-.app-search {
-  flex: 1; background: var(--bg-2); border-radius: 10px;
-  padding: 8px 10px; display: flex; align-items: center; gap: 6px;
-  color: var(--text-muted); font-size: .65rem;
+.app-screenshot {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 28px;
 }
-.app-basket { width:32px;height:32px;border-radius:8px;background:var(--purple);display:flex;align-items:center;justify-content:center;font-size:.9rem; }
-.app-section-label { font-size:.6rem;font-weight:700;color:var(--text-muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px; }
-.event-card-main { margin-bottom: 14px; }
-.event-card-img { border-radius:14px;height:98px;display:flex;flex-direction:column;justify-content:flex-end;padding:10px;position:relative;overflow:hidden; }
-.gradient-card-1 { background: linear-gradient(135deg,#1a0a3d,#5B13EC); }
-.gradient-card-2 { background: linear-gradient(135deg,#0d2d1a,#1a7a40); }
-.gradient-card-3 { background: linear-gradient(135deg,#1a1a0d,#7a6a10); }
-.event-tag { position:absolute;top:8px;left:8px;background:rgba(255,255,255,.15);backdrop-filter:blur(4px);border-radius:6px;padding:2px 8px;font-size:.5rem;font-weight:700;color:#fff;border:1px solid rgba(255,255,255,.2); }
-.event-name { font-size:.7rem;font-weight:700;color:#fff; }
-.event-meta { font-size:.52rem;color:rgba(255,255,255,.65);margin-top:2px; }
-.event-price { font-size:.55rem;color:rgba(255,255,255,.8);margin-top:2px; }
-.event-cards-row { display:flex;gap:8px;margin-bottom:12px; }
-.event-card-sm { flex:1;border-radius:12px;padding:10px;height:80px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden; }
-.event-sm-tag { background:rgba(255,255,255,.15);border-radius:4px;padding:2px 6px;font-size:.46rem;font-weight:700;width:fit-content; }
-.event-sm-name { font-size:.55rem;font-weight:700; }
-.event-sm-price { font-size:.52rem;color:rgba(255,255,255,.7); }
-.venue-card { display:flex;align-items:center;gap:8px;background:var(--bg-2);border-radius:10px;padding:8px; }
-.venue-icon { font-size:1.2rem; }
-.venue-name { font-size:.6rem;font-weight:700;color:var(--text); }
-.venue-loc { font-size:.5rem;color:var(--text-muted); }
 
 /* Hero phone wrap */
 .hero-phone-wrap { position:relative;display:flex;justify-content:center;animation:phone-float 4s ease-in-out infinite; }
